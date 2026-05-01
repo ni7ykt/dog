@@ -35,25 +35,23 @@
 
 打開命令提示字元 (CMD)，輸入以下指令：
 
-``bash
+
 py -3.13 -m pip install requests colorama
 如果下載太慢，可以使用國內鏡像：
-``bash
-``bash
+
+bash
 py -3.13 -m pip install requests colorama -i https://pypi.tuna.tsinghua.edu.cn/simple
-``bash
 3. 下載程式碼
 將 nuketeam_raider.py 下載到你的電腦
 
 📁 檔案準備
 建立 token.txt
 在程式同一個資料夾建立 token.txt 檔案，每行放一個 Discord Token：
-``bash
+
 text
 你的第一個Token
 你的第二個Token
 你的第三個Token
-``bash
 如何取得 Discord Token？
 打開 Discord 網頁版 (https://discord.com/login)
 
@@ -62,24 +60,21 @@ text
 切換到 Console（控制台） 標籤
 
 貼上以下代碼並按 Enter：
-``bash
+
 javascript
 (webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!).exports.default.getToken()
 複製輸出的 Token（很長的一串）
-``bash
 
 🚀 執行程式
 1. 打開命令提示字元
 按 Win + R，輸入 cmd，按 Enter
 
 2. 切換到程式資料夾
-``bash
+bash
 cd C:\Users\你的用戶名\下載\NukeTeamRaider
-``bash
-4. 執行程式
-``bash
+3. 執行程式
+bash
 py -3.13 nuketeam_raider.py
-``bash
 📖 使用教學
 第一次使用
 執行程式後，會看到登入畫面
@@ -91,7 +86,7 @@ py -3.13 nuketeam_raider.py
 註冊完成後，選擇 1 登入
 
 進入主選單
-``bash
+
 主選單介面
 text
 [01] Token 檢查器          [06] 頻道轟炸       [11] 幽靈轟炸        [16] 大量檢舉
@@ -99,9 +94,8 @@ text
 [03] Token 加入伺服器      [08] 回覆轟炸       [13] 投票轟炸        [18] 驗證碼繞過
 [04] Token 退出伺服器      [09] 論壇轟炸       [14] 大量交友        [19] @everyone 轟炸
 [05] Token 分類器          [10] 審計轟炸       [15] Token 資訊      [20] Token 人性化
+
 [P] 下一頁                      [00] 退出程式
-``bash
-``bash
 功能說明
 第一頁 (01-20)
 編號	功能	說明
@@ -127,8 +121,7 @@ text
 20	Token 人性化	模擬真人行為
 第二頁 (26-50)
 按 P 進入第二頁
-``bash
-``bash
+
 編號	功能	說明
 26	伺服器炸彈	大量創建頻道+角色
 27	多頻道轟炸	在多個頻道同時轟炸
@@ -155,22 +148,17 @@ text
 48	退出所有伺服器	退出所有伺服器
 49	兌換碼	兌換 Discord 禮物
 50	AI聊天	AI 對話機器人
-``bash
-``bash
 🔧 常見問題
 Q1: 出現「ModuleNotFoundError: No module named 'requests'」
-``bash
 解決方法： 安裝缺少的套件
 
-``bash
+bash
 py -3.13 -m pip install requests colorama
-``bash
 Q2: 出現「No module named 'colorama'」
 解決方法： 安裝 colorama
 
-``bash
+bash
 py -3.13 -m pip install colorama
-``bash
 Q3: Token 無效怎麼辦？
 重新獲取新的 Token
 
