@@ -1,105 +1,60 @@
-# 🐕 理性瘋狗 Nuke Team Raider
+# 理性瘋狗 Discord 工具 v2.2.1
 
-Discord 多功能工具，支援 Token 管理、頻道轟炸、私訊轟炸等 50 種功能。
-
----
-
-## ⚠️ 免責聲明
-
-本工具出事作者不負責，使用後果自負。
+一個功能強大的 Discord Token 管理與自動化工具。
 
 ---
 
-## 📦 安裝
-
-1. 安裝 Python 3.13
-
-下載網址：https://www.python.org/downloads/
-
-安裝時勾選：
-- Add Python to PATH
-- pip
-
-2. 安裝套件
-
-py -3.13 -m pip install requests colorama
-
-3. 下載程式碼
-
-將 nuketeam_raider.py 下載到你的電腦
+⚠️ 警告
+使用本工具違反 Discord 使用條款，可能導致帳號被永久封禁，請自行承擔風險。
 
 ---
 
-## 📁 準備 Token
-
-建立 token.txt，每行放一個 Discord Token：
-
-你的第一個Token
-你的第二個Token
-你的第三個Token
-
-如何取得 Token？
-
-1. 打開 Discord 網頁版，按 F12
-2. 切換到 Console（控制台）
-3. 貼上以下代碼，按 Enter：
-
-(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!).exports.default.getToken()
-
-4. 複製出現的 Token
+✨ 主要功能
+- 漂亮的動態 RGB 彩色介面
+- 多頁面功能選單（共 4 頁）
+- Token 批量檢查、上線、加入/退出伺服器
+- 多種轟炸功能（訊息、表情、@everyone、討論串等）
+- 伺服器管理（創建頻道、停權、蒐集等）
+- Cwelium 優化功能
+- 本地帳號系統 + Discord 備份
 
 ---
 
-## 🚀 執行程式
+🚀 使用方法
 
-cd 你的程式資料夾
-py -3.13 nuketeam_raider.py
+1. 安裝依賴套件：
+   pip install colorama aiohttp requests
 
-第一次使用請選擇 2 註冊，之後用 1 登入。
+2. 將 Token 放入 token.txt（一行一個）
 
----
-
-## 📖 功能列表
-
-01 Token 檢查器      11 幽靈轟炸
-02 Token 上線器      12 討論串轟炸
-03 Token 加入伺服器  13 投票轟炸
-04 Token 退出伺服器  14 大量交友
-05 Token 分類器      15 Token 資訊
-06 頻道轟炸          16 大量檢舉
-07 表情轟炸          17 私訊轟炸
-08 回覆轟炸          18 驗證碼繞過
-09 論壇轟炸          19 @everyone 轟炸
-10 審計轟炸          20 Token 人性化
-
-按 P 進入第二頁（26-50）
+3. 執行程式：
+   token控制器面板exe
 
 ---
 
-## ❓ 常見問題
-
-Q: 出現 No module named 'requests'？
-
-py -3.13 -m pip install requests colorama
-
-Q: Token 無效？
-
-重新獲取 Token，不要改密碼。
-
-Q: 出現 429？
-
-發送太快，降低每秒次數。
+📁 重要檔案
+- token.txt       → 存放 Token
+- users.json      → 本地帳號資料
+- invites.txt     → 邀請連結
 
 ---
 
-## ⚠️ 注意事項
-
-- 不要用主帳號
-- 不要改密碼
-- 後果自負
+📋 功能概覽
+第一頁：Token 檢查、上線、各種轟炸功能
+第二頁：頻道管理、成員蒐集、狀態輪播
+第三頁：Cwelium 優化功能
+第四頁：其他進階功能
 
 ---
 
-## 📌 版本資訊
+🛡️ 使用建議
+- 建議搭配代理使用
+- 降低操作頻率
+- 不要使用主帳號
 
-v2.2.1 | Python 3.13 | 2026-05-01
+---
+
+版本：2.2.1
+作者：理性瘋狗
+
+簡單好用，祝使用愉快！
